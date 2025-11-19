@@ -34,28 +34,3 @@ def load_data():
         print(e)
         STOCK_PRODUCT = []
         NEXT_ID = 1
-
-
-def save_data():
-    global NEXT_ID
-
-
-    data_for_save = {
-        'produtos': STOCK_PRODUCT,
-        'next_id': NEXT_ID
-    }
-
-    try:
-        with open(NAME_FILE, mode='w', encoding='utf-8') as file:
-
-            json.dump(data_for_save, file, indent=4)
-        print("Dados salvos com sucesso!")
-    except Exception as e:
-        print(f"ERRO: Não foi possível salvar os dados. Detalhes: {e}")
-
-
-def search_product(id_produto):
-    for product in STOCK_PRODUCT:
-        if product['id'] == id_produto:
-            return product
-    return None
