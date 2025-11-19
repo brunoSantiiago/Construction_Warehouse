@@ -39,6 +39,7 @@ def load_data():
 def save_data():
     global NEXT_ID
 
+
     data_for_save = {
         'produtos': STOCK_PRODUCT,
         'next_id': NEXT_ID

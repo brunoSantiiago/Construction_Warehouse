@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab252f5d-55f3-4404-b039-1b1759f1a456" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/main_menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/print_product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/save_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/search_product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/insert_product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/make_sale.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/report_stock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/update_stock.py" afterDir="false" />
+    <list default="true" id="ab252f5d-55f3-4404-b039-1b1759f1a456" name="Changes" comment="Initial commit;&#10;&#10;- Adding folder structure &#10;&#10;- adding files  from all layers&#10;&#10;- implemented data initialization methods &lt;path: repository/load_data.py &gt;">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/main_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/main_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/print_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/print_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/load_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/save_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/save_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/search_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/search_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/insert_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/insert_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/make_sale.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/make_sale.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/report_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/report_stock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/update_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/update_stock.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +29,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/brunoSantiiago/Construction_Warehouse.git",
+    "accountId": "aad8111b-dffd-4a2f-8c9b-80e80c4f7a4a"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -68,7 +75,31 @@
       <option name="presentableId" value="Default" />
       <updated>1763507665849</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit;&#10;&#10;- Adding folder structure &#10;&#10;- adding files  from all layers&#10;&#10;- implemented data initialization methods &lt;path: repository/load_data.py &gt;">
+      <option name="closed" value="true" />
+      <created>1763522787395</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1763522787395</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit;&#10;&#10;- Adding folder structure &#10;&#10;- adding files  from all layers&#10;&#10;- implemented data initialization methods &lt;path: repository/load_data.py &gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit;&#10;&#10;- Adding folder structure &#10;&#10;- adding files  from all layers&#10;&#10;- implemented data initialization methods &lt;path: repository/load_data.py &gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
