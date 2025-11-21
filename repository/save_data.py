@@ -1,14 +1,14 @@
 import json
 
-from repository.load_data import STOCK_PRODUCT, NAME_FILE
+from repository.load_data import STOCK_PRODUCT, NAME_FILE, PROXIMO_ID
 
 
 def save_data():
-    global NEXT_ID
+
 
     data_for_save = {
         'produtos': STOCK_PRODUCT,
-        'next_id': NEXT_ID
+        'id': PROXIMO_ID
     }
 
     try:

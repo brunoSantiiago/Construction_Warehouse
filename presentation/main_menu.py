@@ -5,7 +5,6 @@ from service.make_sale import make_sale
 from service.report_stock import report_stock
 from service.update_stock import update_stock
 
-
 def main_menu():
     load_data()
 

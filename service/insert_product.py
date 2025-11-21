@@ -1,8 +1,8 @@
-from repository.load_data import STOCK_PRODUCT
+from repository import load_data
 
 
 def insert_product():
-    global PROXIMO_ID
+    
 
     print("\n--- CADASTRO DE NOVO PRODUTO ---")
     nome = input("Nome do Produto (Ex: Cimento CPII 50kg): ").strip()
@@ -28,11 +28,11 @@ def insert_product():
             print("Entrada inválida. Digite um número inteiro para o estoque.")
 
     novo_produto = {
-        'id': PROXIMO_ID,
+        'id': load_data.PROXIMO_ID,
         'nome': nome,
         'preco': preco,
         'estoque': estoque_inicial
     }
-    STOCK_PRODUCT.append(novo_produto)
-    PROXIMO_ID += 1
+    load_data.STOCK_PRODUCT.append(novo_produto)
+    load_data.PROXIMO_ID += 1
     print(f"\nProduto '{nome}' cadastrado com sucesso! ID: {novo_produto['id']}")

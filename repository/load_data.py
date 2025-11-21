@@ -3,11 +3,11 @@ import os.path
 
 NAME_FILE = 'dados_deposito.json'
 STOCK_PRODUCT = []
-NEXT_ID = 1
+PROXIMO_ID = 1
 
 
 def load_data():
-    global NEXT_ID
+    global  PROXIMO_ID
     global STOCK_PRODUCT
 
     if not os.path.exists(NAME_FILE):
@@ -17,9 +17,9 @@ def load_data():
     try:
         with open(NAME_FILE, mode='r', encoding='utf-8') as json_file:
             data_loads = json.load(json_file)
-            if 'produtos' in data_loads and 'next_id' in data_loads:
+            if 'produtos' in data_loads and     'id' in data_loads:
                 STOCK_PRODUCT = data_loads['produtos']
-                NEXT_ID = data_loads['next_id']
+                PROXIMO_ID = data_loads['id']
                 print(f"Dados carregados com sucesso. Total de {len(STOCK_PRODUCT)} produtos.")
 
             else:
@@ -28,9 +28,9 @@ def load_data():
     except json.decoder.JSONDecodeError:
         print(f"Erro ao decodificar JSON em '{NAME_FILE}'. O arquivo pode estar vazio ou corrompido.")
         STOCK_PRODUCT = []
-        NEXT_ID = 1
+        PROXIMO_ID = 1
 
     except Exception as e:
         print(e)
         STOCK_PRODUCT = []
-        NEXT_ID = 1
+        PROXIMO_ID = 1
