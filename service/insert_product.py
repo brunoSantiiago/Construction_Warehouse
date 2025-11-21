@@ -1,11 +1,22 @@
-from repository.load_data import STOCK_PRODUCT
+from repository.load_data import get_stock, get_next_id, set_next_id
+from repository.search_product import search_product_by_name
 
 
 def insert_product():
-    global PROXIMO_ID
-
     print("\n--- CADASTRO DE NOVO PRODUTO ---")
-    nome = input("Nome do Produto (Ex: Cimento CPII 50kg): ").strip()
+
+    while True:
+        nome = input("Nome do Produto (Ex: Cimento CPII 50kg): ").strip()
+
+        produto_existente = search_product_by_name(nome)
+
+        if produto_existente:
+            print("🛑 ERRO: Já existe um produto com este nome!")
+            print(f"Produto existente: ID {produto_existente['id']} - Estoque: {produto_existente['estoque']}")
+            print("Tente um nome diferente ou utilize a Opção 2 para atualizar o estoque.")
+            continue
+        else:
+            break
 
     while True:
         try:
@@ -27,12 +38,14 @@ def insert_product():
         except ValueError:
             print("Entrada inválida. Digite um número inteiro para o estoque.")
 
+    current_id = get_next_id()
+
     novo_produto = {
-        'id': PROXIMO_ID,
+        'id': current_id,
         'nome': nome,
         'preco': preco,
         'estoque': estoque_inicial
     }
-    STOCK_PRODUCT.append(novo_produto)
-    PROXIMO_ID += 1
-    print(f"\nProduto '{nome}' cadastrado com sucesso! ID: {novo_produto['id']}")
+    get_stock().append(novo_produto)
+    set_next_id(current_id + 1)
+    print(f"\n✅ Produto '{nome}' cadastrado com sucesso! ID: {novo_produto['id']}")

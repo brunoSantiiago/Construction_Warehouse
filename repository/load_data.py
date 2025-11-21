@@ -1,9 +1,23 @@
 import json
 import os.path
 
+# Variáveis globais de estado
 NAME_FILE = 'dados_deposito.json'
 STOCK_PRODUCT = []
 NEXT_ID = 1
+
+
+def get_stock():
+    return STOCK_PRODUCT
+
+
+def get_next_id():
+    return NEXT_ID
+
+
+def set_next_id(new_id):
+    global NEXT_ID
+    NEXT_ID = new_id
 
 
 def load_data():

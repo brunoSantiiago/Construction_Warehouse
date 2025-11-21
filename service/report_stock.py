@@ -1,4 +1,4 @@
-from repository.load_data import STOCK_PRODUCT
+import repository.load_data as data
 
 
 def report_stock():
@@ -9,7 +9,7 @@ def report_stock():
     print(f"{'ID': <5}{'Nome do Produto': <35}{'Preço': <10}{'Estoque': <10}")
     print("-" * 60)
 
-    for produto in STOCK_PRODUCT:
+    for produto in data.STOCK_PRODUCT:
         status = ""
         if produto['estoque'] < 10:
             status = " (BAIXO!)"
@@ -19,5 +19,5 @@ def report_stock():
         print(f"{produto['id']: <5}{produto['nome']: <35}R$ {produto['preco']: <7.2f}{produto['estoque']: <10}{status}")
 
     print("-" * 60)
-    print(f"Total de Produtos Cadastrados: {len(STOCK_PRODUCT)}")
+    print(f"Total de Produtos Cadastrados: {len(data.STOCK_PRODUCT)}")
     print("=" * 60)
