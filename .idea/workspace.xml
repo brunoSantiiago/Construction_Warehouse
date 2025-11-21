@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab252f5d-55f3-4404-b039-1b1759f1a456" name="Changes" comment="Initial commit;&#10;&#10;- Adding folder structure &#10;&#10;- adding files  from all layers&#10;&#10;- implemented data initialization methods &lt;path: repository/load_data.py &gt;">
+    <list default="true" id="ab252f5d-55f3-4404-b039-1b1759f1a456" name="Changes" comment="refactoring/ methods save_data.py, search_product.py and load_data.py implemented">
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/load_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/save_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/save_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/search_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/search_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/main_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/main_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/print_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/print_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/insert_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/insert_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/make_sale.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/make_sale.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/report_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/report_stock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/update_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/update_stock.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +35,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "brunoSantiiago"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;brunoSantiiago&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/brunoSantiiago/Construction_Warehouse.git&quot;,
@@ -50,17 +55,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763522787395</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactoring/ methods save_data.py, search_product.py and load_data.py implemented">
+      <option name="closed" value="true" />
+      <created>1763524425011</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1763524425011</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,17 +142,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit;&#10;&#10;- Adding folder structure &#10;&#10;- adding files  from all layers&#10;&#10;- implemented data initialization methods &lt;path: repository/load_data.py &gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit;&#10;&#10;- Adding folder structure &#10;&#10;- adding files  from all layers&#10;&#10;- implemented data initialization methods &lt;path: repository/load_data.py &gt;" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="refactoring/ methods save_data.py, search_product.py and load_data.py implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring/ methods save_data.py, search_product.py and load_data.py implemented" />
   </component>
 </project>
