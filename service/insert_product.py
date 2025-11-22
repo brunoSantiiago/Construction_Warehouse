@@ -1,6 +1,8 @@
 from repository.load_data import get_stock, get_next_id, set_next_id
 from repository.search_product import search_product_by_name
 
+from model.produto import Produto
+
 
 def insert_product():
     print("\n--- CADASTRO DE NOVO PRODUTO ---")
@@ -40,12 +42,19 @@ def insert_product():
 
     current_id = get_next_id()
 
-    novo_produto = {
-        'id': current_id,
-        'nome': nome,
-        'preco': preco,
-        'estoque': estoque_inicial
-    }
-    get_stock().append(novo_produto)
+    new_product = Produto(
+        id_produto=current_id,
+        nome=nome,
+        preco=preco,
+        estoque=estoque_inicial
+    )
+
+    # novo_produto = {
+    #     'id': current_id,
+    #     'nome': nome,
+    #     'preco': preco,
+    #     'estoque': estoque_inicial
+    # }
+    get_stock().append(new_product)
     set_next_id(current_id + 1)
-    print(f"\n✅ Produto '{nome}' cadastrado com sucesso! ID: {novo_produto['id']}")
+    print(f"\n✅ Produto '{new_product.nome}' cadastrado com sucesso! ID: {new_product.id}")

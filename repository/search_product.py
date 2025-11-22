@@ -9,7 +9,6 @@ def search_product(id_produto):
 
 
 def search_product_by_name(nome_produto):
-    # Converte o nome para minúsculas (ou maiúsculas) para comparação Case-Insensitive
     nome_produto_lower = nome_produto.lower().strip()
 
     for product in get_stock():

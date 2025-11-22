@@ -14,10 +14,10 @@ def main_menu():
         print("SISTEMA DEPÓSITO DE CONSTRUÇÃO MVP")
         print("*" * 40)
         print("1. Cadastrar Novo Produto (RF01)")
-        print("2. Consultar / Atualizar Estoque (RF02)")
+        print("2. Atualizar Estoque (RF02)")
         print("3. Registrar Venda (RF03)")
         print("4. Relatório de Estoque (RF04)")
-        print("5. Sair e Salvar")
+        print("5. Sair e Salvar (RF05)")
         print("*" * 40)
 
         escolha = input("Selecione uma opção: ").strip()
