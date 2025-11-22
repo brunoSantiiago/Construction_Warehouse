@@ -11,12 +11,12 @@ def report_stock():
 
     for produto in data.STOCK_PRODUCT:
         status = ""
-        if produto['estoque'] < 10:
+        if produto.estoque < 10:
             status = " (BAIXO!)"
-        elif produto['estoque'] < 50:
+        elif produto.estoque < 50:
             status = " (Alerta)"
 
-        print(f"{produto['id']: <5}{produto['nome']: <35}R$ {produto['preco']: <7.2f}{produto['estoque']: <10}{status}")
+        print(f"{produto.id: <5}{produto.nome: <35}R$ {produto.preco: <7.2f}{produto.estoque: <10}{status}")
 
     print("-" * 60)
     print(f"Total de Produtos Cadastrados: {len(data.STOCK_PRODUCT)}")

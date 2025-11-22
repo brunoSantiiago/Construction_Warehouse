@@ -13,5 +13,5 @@ def search_product_by_name(nome_produto):
 
     for product in get_stock():
         if product['nome'].lower().strip() == nome_produto_lower:
-            return product  # Retorna o produto se encontrar
-    return None  # Retorna None se não encontrar
+            return product
+    return None
