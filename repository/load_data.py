@@ -1,9 +1,24 @@
 import json
 import os.path
 
+from model.produto import Produto
+
 NAME_FILE = 'dados_deposito.json'
 STOCK_PRODUCT = []
 NEXT_ID = 1
+
+
+def get_stock():
+    return STOCK_PRODUCT
+
+
+def get_next_id():
+    return NEXT_ID
+
+
+def set_next_id(new_id):
+    global NEXT_ID
+    NEXT_ID = new_id
 
 
 def load_data():
@@ -18,7 +33,16 @@ def load_data():
         with open(NAME_FILE, mode='r', encoding='utf-8') as json_file:
             data_loads = json.load(json_file)
             if 'produtos' in data_loads and 'next_id' in data_loads:
-                STOCK_PRODUCT = data_loads['produtos']
+                STOCK_PRODUCT = []
+                for item_dict in data_loads['produtos']:
+                    produto_obj = Produto(
+                        item_dict['id'],
+                        item_dict['nome'],
+                        item_dict['preco'],
+                        item_dict['estoque']
+                    )
+                    STOCK_PRODUCT.append(produto_obj)
+
                 NEXT_ID = data_loads['next_id']
                 print(f"Dados carregados com sucesso. Total de {len(STOCK_PRODUCT)} produtos.")
 
