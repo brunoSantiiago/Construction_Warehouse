@@ -3,7 +3,7 @@ from repository.load_data import get_stock
 
 def search_product(id_produto):
     for product in get_stock():
-        if product['id'] == id_produto:
+        if product.id == id_produto:
             return product
     return None
 
@@ -12,6 +12,6 @@ def search_product_by_name(nome_produto):
     nome_produto_lower = nome_produto.lower().strip()
 
     for product in get_stock():
-        if product['nome'].lower().strip() == nome_produto_lower:
+        if product.nome.lower().strip() == nome_produto_lower:
             return product
     return None

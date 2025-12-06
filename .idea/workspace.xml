@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab252f5d-55f3-4404-b039-1b1759f1a456" name="Changes" comment="{&#10;  &quot;produtos&quot;: [&#10;    {&#10;      &quot;id&quot;: 1,&#10;      &quot;nome&quot;: &quot;Cimento CPII 50kg&quot;,&#10;      &quot;preco&quot;: 23.0,&#10;      &quot;estoque&quot;: 3&#10;    },&#10;    {&#10;      &quot;id&quot;: 2,&#10;      &quot;nome&quot;: &quot;Cimento&quot;,&#10;      &quot;preco&quot;: 23.0,&#10;      &quot;estoque&quot;: 1&#10;    },&#10;    {&#10;      &quot;id&quot;: 3,&#10;      &quot;nome&quot;: &quot;CIMENTO FORTLEV&quot;,&#10;      &quot;preco&quot;: 34.0,&#10;      &quot;estoque&quot;: 34&#10;    }&#10;  ],&#10;  &quot;proximo_id&quot;: 4&#10;}">
+    <list default="true" id="ab252f5d-55f3-4404-b039-1b1759f1a456" name="Changes" comment="refactor methods report_stock, insert_product and search_product">
+      <change afterPath="$PROJECT_DIR$/.idea/PylintPlugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository/list_sales.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository/sales_history.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/delete_product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/edit_product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/search_menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/load_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/main_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/main_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/print_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/print_product.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/save_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/save_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/search_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/search_product.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/insert_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/insert_product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/report_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/report_stock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/make_sale.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/make_sale.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/update_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/update_stock.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +69,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "refactor/update-main-and-json",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
@@ -141,7 +149,31 @@
       <option name="project" value="LOCAL" />
       <updated>1763753115929</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="{&#10;    &quot;produtos&quot;: [&#10;        {&#10;            &quot;id&quot;: 1,&#10;            &quot;nome&quot;: &quot;Tijolo&quot;,&#10;            &quot;preco&quot;: 23.5,&#10;            &quot;estoque&quot;: 12&#10;        },&#10;        {&#10;            &quot;id&quot;: 2,&#10;            &quot;nome&quot;: &quot;Cimento CPII&quot;,&#10;            &quot;preco&quot;: 12.23,&#10;            &quot;estoque&quot;: 14&#10;        },&#10;        {&#10;            &quot;id&quot;: 3,&#10;            &quot;nome&quot;: &quot;Cimento CPII 50kg&quot;,&#10;            &quot;preco&quot;: 34.9,&#10;            &quot;estoque&quot;: 34&#10;        }&#10;    ],&#10;    &quot;next_id&quot;: 4&#10;}">
+      <option name="closed" value="true" />
+      <created>1763757755866</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1763757755866</updated>
+    </task>
+    <task id="LOCAL-00006" summary="addding entity &quot;Product&quot;">
+      <option name="closed" value="true" />
+      <created>1763770434425</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1763770434425</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactor methods report_stock, insert_product and search_product">
+      <option name="closed" value="true" />
+      <created>1763773724538</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1763773724538</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,6 +191,9 @@
     <MESSAGE value="Initial commit;&#10;&#10;- Adding folder structure &#10;&#10;- adding files  from all layers&#10;&#10;- implemented data initialization methods &lt;path: repository/load_data.py &gt;" />
     <MESSAGE value="refactoring/ methods save_data.py, search_product.py and load_data.py implemented" />
     <MESSAGE value="{&#10;  &quot;produtos&quot;: [&#10;    {&#10;      &quot;id&quot;: 1,&#10;      &quot;nome&quot;: &quot;Cimento CPII 50kg&quot;,&#10;      &quot;preco&quot;: 23.0,&#10;      &quot;estoque&quot;: 3&#10;    },&#10;    {&#10;      &quot;id&quot;: 2,&#10;      &quot;nome&quot;: &quot;Cimento&quot;,&#10;      &quot;preco&quot;: 23.0,&#10;      &quot;estoque&quot;: 1&#10;    },&#10;    {&#10;      &quot;id&quot;: 3,&#10;      &quot;nome&quot;: &quot;CIMENTO FORTLEV&quot;,&#10;      &quot;preco&quot;: 34.0,&#10;      &quot;estoque&quot;: 34&#10;    }&#10;  ],&#10;  &quot;proximo_id&quot;: 4&#10;}" />
-    <option name="LAST_COMMIT_MESSAGE" value="{&#10;  &quot;produtos&quot;: [&#10;    {&#10;      &quot;id&quot;: 1,&#10;      &quot;nome&quot;: &quot;Cimento CPII 50kg&quot;,&#10;      &quot;preco&quot;: 23.0,&#10;      &quot;estoque&quot;: 3&#10;    },&#10;    {&#10;      &quot;id&quot;: 2,&#10;      &quot;nome&quot;: &quot;Cimento&quot;,&#10;      &quot;preco&quot;: 23.0,&#10;      &quot;estoque&quot;: 1&#10;    },&#10;    {&#10;      &quot;id&quot;: 3,&#10;      &quot;nome&quot;: &quot;CIMENTO FORTLEV&quot;,&#10;      &quot;preco&quot;: 34.0,&#10;      &quot;estoque&quot;: 34&#10;    }&#10;  ],&#10;  &quot;proximo_id&quot;: 4&#10;}" />
+    <MESSAGE value="{&#10;    &quot;produtos&quot;: [&#10;        {&#10;            &quot;id&quot;: 1,&#10;            &quot;nome&quot;: &quot;Tijolo&quot;,&#10;            &quot;preco&quot;: 23.5,&#10;            &quot;estoque&quot;: 12&#10;        },&#10;        {&#10;            &quot;id&quot;: 2,&#10;            &quot;nome&quot;: &quot;Cimento CPII&quot;,&#10;            &quot;preco&quot;: 12.23,&#10;            &quot;estoque&quot;: 14&#10;        },&#10;        {&#10;            &quot;id&quot;: 3,&#10;            &quot;nome&quot;: &quot;Cimento CPII 50kg&quot;,&#10;            &quot;preco&quot;: 34.9,&#10;            &quot;estoque&quot;: 34&#10;        }&#10;    ],&#10;    &quot;next_id&quot;: 4&#10;}" />
+    <MESSAGE value="addding entity &quot;Product&quot;" />
+    <MESSAGE value="refactor methods report_stock, insert_product and search_product" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor methods report_stock, insert_product and search_product" />
   </component>
 </project>

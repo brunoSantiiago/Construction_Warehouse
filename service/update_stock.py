@@ -26,7 +26,7 @@ def update_stock():
             except ValueError:
                 print("Entrada inválida. Digite um número inteiro.")
 
-        produto['estoque'] += quantidade
-        print(f"\nEstoque de '{produto['nome']}' atualizado. Novo estoque: {produto['estoque']}")
+        produto.estoque += quantidade
+        print(f"\nEstoque de '{produto.nome}' atualizado. Novo estoque: {produto.estoque}")
     else:
         print(f"Produto com ID {id_produto} não encontrado.")

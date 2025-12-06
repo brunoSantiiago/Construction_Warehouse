@@ -5,7 +5,7 @@ from repository.load_data import get_stock, get_next_id, NAME_FILE
 def save_data():
     produtos_para_json = []
     for produto_obj in get_stock():
-        # (dicionário)
+
         produto_dict = {
             'id': produto_obj.id,
             'nome': produto_obj.nome,
